@@ -16,7 +16,7 @@ namespace ApiSignature.Core.Test
         }
 
         [Fact]
-        public void HostGreaterThanClientOutOfRang()
+        public void Can_Get_False_When_Host_Timestampe_Greater_Than_Client()
         {
             long _host;
             long _client;
@@ -34,7 +34,7 @@ namespace ApiSignature.Core.Test
         }
 
         [Fact]
-        public void HostGreaterThanClientInRange()
+        public void Can_Get_True_When_Host_Timstamp_Greater_Than_Client_But_InRange()
         {
             long _host;
             long _client;
@@ -52,7 +52,7 @@ namespace ApiSignature.Core.Test
         }
 
         [Fact]
-        public void ClientGreaterThanHostOutOfRang()
+        public void Can_Get_False_When_Client_Timestamp_Greater_Than_Host()
         {
             long _host;
             long _client;
@@ -70,7 +70,7 @@ namespace ApiSignature.Core.Test
         }
 
         [Fact]
-        public void ClientGreaterThanHostInRange()
+        public void Can_Get_True_When_Client_Timestamp_Greater_Than_Host_But_InRange()
         {
             long _host;
             long _client;
@@ -88,7 +88,7 @@ namespace ApiSignature.Core.Test
         }
         
         [Fact]  
-        public void ClientEqualHost()
+        public void Can_Get_True_When_Client_Equal_Host()
         {
             long _host;
             long _client;

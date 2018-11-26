@@ -13,7 +13,7 @@ namespace ApiSignature.Core.Test
         }
 
         [Fact]
-        public void ReturnTimeStampFromNoParameterTest()
+        public void Can_Get_Long_Type_Timestamp()
         {
             long _timestamp;
 
@@ -23,7 +23,7 @@ namespace ApiSignature.Core.Test
         }
 
         [Fact]
-        public void OriginTimeStampTest()
+        public void Can_Get_Timestamp_At_Base_TimeStamp()
         {
             DateTime _DefaultDateTime;
             long _timestamp;
@@ -37,7 +37,7 @@ namespace ApiSignature.Core.Test
         }
 
         [Fact]
-        public void StepBySecondTest()
+        public void Can_Get_Current_Timestamp_After_Ten_Seconds()
         {
             DateTime _DefaultDateTime;
             long _timestamp;

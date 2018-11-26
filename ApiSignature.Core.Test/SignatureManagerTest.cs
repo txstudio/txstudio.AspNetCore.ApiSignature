@@ -27,7 +27,7 @@ namespace ApiSignature.Core.Test
         }
         
         [Fact]
-        public void GetSignagure()
+        public void Can_Get_Valid_Signagure()
         {
             string _expected;
             string _actual;
@@ -39,7 +39,7 @@ namespace ApiSignature.Core.Test
         }
 
         [Fact]
-        public void ValidSignatureWithNormalCase()
+        public void Can_Get_True_When_Signature_Valid()
         {
             bool _condition;
 
@@ -49,7 +49,7 @@ namespace ApiSignature.Core.Test
         }
 
         [Fact]
-        public void ValidSignatureWithInvalidTimeStamp()
+        public void Can_Throw_TimeStampInvalidException_When_Timestamp_Invalid()
         {
             bool _condition;
             long _invalidTimeStamp;
@@ -63,7 +63,7 @@ namespace ApiSignature.Core.Test
 
 
         [Fact]
-        public void ValidSignatureWithInvalidSignature()
+        public void Can_Throw_SignatureInvalidException_When_Signature_Not_Correct()
         {
             bool _condition;
             string _invalidSignature;
@@ -76,7 +76,7 @@ namespace ApiSignature.Core.Test
         }
 
         [Fact]  
-        public void GetTimeStampWithTestCase()
+        public void Can_Get_Zero_Timestamp_In_Test_Timestamp_Generator()
         {
             long _expected;
             long _actual;

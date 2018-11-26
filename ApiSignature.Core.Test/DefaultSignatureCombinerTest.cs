@@ -13,7 +13,7 @@ namespace ApiSignature.Core.Test
         }
 
         [Fact]
-        public void GetSignatureOrigin()
+        public void Can_Get_Signature_String()
         {
             long _timestamp;
             string _secret;

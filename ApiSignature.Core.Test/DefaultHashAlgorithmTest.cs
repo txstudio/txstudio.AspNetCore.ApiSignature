@@ -14,7 +14,7 @@ namespace ApiSignature.Core.Test
         }
 
         [Fact]
-        public void HashWithNormalCase()
+        public void Can_Get_Hash_Value()
         {
             string _content;
 
@@ -30,7 +30,7 @@ namespace ApiSignature.Core.Test
         }
 
         [Fact]
-        public void HashWithEmptyString()
+        public void Can_Throw_Exception_When_Content_Is_StringEmpty()
         {
             string _content;
 
